@@ -298,10 +298,10 @@
                 
                 
                 <h1 id="get-started-configure-owa-adfs-and-ibm-security-verify">Get Started: Configure OWA, ADFS and IBM Security Verify</h1>
-<p>ADFS plays an important role in this integration because it proxies the SAML authentication in IBM Security Verify, and converts it to the OWA-compatable WS-Fed. </p>
+<p>ADFS plays an important role in this integration because it proxies the SAML authentication in IBM Security Verify and converts it to the OWA-compatible WS-Fed. </p>
 <h2 id="section-1-configure-owa-to-use-adfs">Section #1: Configure OWA to use ADFS</h2>
-<p>For a full guide, including how to provision ADFS <a href="https://docs.microsoft.com/en-us/exchange/clients/outlook-on-the-web/ad-fs-claims-based-auth?view=exchserver-2019">click here</a> for an excellent Microsoft article that walks you through everything. </p>
-<p>If you already have ADFS deployed, you simply need to create a <code>Relying Party Trust</code>. <a href="https://docs.microsoft.com/en-us/exchange/clients/outlook-on-the-web/ad-fs-claims-based-auth?view=exchserver-2019#step-4-create-a-relying-party-trust-and-custom-claim-rules-in-ad-fs-for-outlook-on-the-web-and-the-eac">Click here</a> to be taken directly to do those steps.</p>
+<p>For a complete guide, including how to provision ADFS <a href="https://docs.microsoft.com/en-us/exchange/clients/outlook-on-the-web/ad-fs-claims-based-auth?view=exchserver-2019">click here</a> for an excellent Microsoft article that walks you through everything. </p>
+<p>If you already have ADFS deployed, you just need to create a <code>Relying Party Trust</code>. <a href="https://docs.microsoft.com/en-us/exchange/clients/outlook-on-the-web/ad-fs-claims-based-auth?view=exchserver-2019#step-4-create-a-relying-party-trust-and-custom-claim-rules-in-ad-fs-for-outlook-on-the-web-and-the-eac">Click here</a> to be taken directly to do those steps.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Web Application Proxy server is not required for this tutorial.</p>
@@ -345,7 +345,7 @@
 </li>
 </ol>
 <h2 id="section-3-create-a-claims-provider-trust-in-adfs">Section #3: Create a Claims Provider Trust in ADFS</h2>
-<p>Now we need to create a Claims Provider Trust in ADFS, which is basically an additional identity provider. Then, we need to configure ADFS to always default to using our newly-created Claims Provider Trust whenever it receives a sign-in request for Outlook Web Access.</p>
+<p>We need to create a Claims Provider Trust in ADFS, which is essentially just an additional identity provider for ADFS. By default, ADFS wants to use Active Directory as its preferred identity provider. We need to configure ADFS to always default to using our newly-created Claims Provider Trust whenever a sign-in request for Outlook Web Access is received.</p>
 <p>On the ADFS server:</p>
 <ol>
 <li>Open the <code>AD FS Management</code> application.</li>
@@ -368,7 +368,7 @@
     <div class="highlight"><pre><span></span><code>c:[Type == &quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier&quot;, Properties[&quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claimproperties/format&quot;] == &quot;urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified&quot;] 
 =&gt; issue(store = &quot;Active Directory&quot;, types = (&quot;claims:temp/attribute1&quot;), query = &quot;(&amp;(objectCategory=person)(objectClass=user)(|(userPrincipalName={0})(mail={0})));sAMAccountName;contoso\ADFS_SERVICE_ACCOUNT&quot;, param = c.Value);
 </code></pre></div>
-    Note: <code>contoso</code> should be replaced with your real domain name. And <code>ADFS_SERVICE_ACCOUNT</code> should be replaced with the AD service account ADFS is running under.</p>
+    Note: <code>contoso</code> should be replaced with your actual domain name. And <code>ADFS_SERVICE_ACCOUNT</code> should be replaced with the AD service account ADFS is running under.</p>
 </li>
 </ul>
 </li>
@@ -389,12 +389,12 @@
     <div class="highlight"><pre><span></span><code>c:[Type == &quot;claims:temp/attribute1&quot;] 
 =&gt; issue(Type = &quot;http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname&quot;, Issuer = &quot;AD AUTHORITY&quot;, OriginalIssuer = &quot;https://ylu2.verify.ibm.com/saml/sps/saml20ip/saml20&quot;, Value = &quot;contoso\&quot; + c.Value);
 </code></pre></div>
-    Note: <code>contoso</code> should be replaced with your real domain name.</p>
+    Note: <code>contoso</code> should be replaced with your actual domain name.</p>
 </li>
 </ul>
 </li>
 <li>
-<p>Run the following PowerShell command to tell ADFS to always authenticate using ISV, whenever people try to sign into Outlook Web Access:
+<p>Run the following PowerShell command to tell ADFS always to authenticate using ISV whenever people try to sign in to Outlook Web Access:
     <div class="highlight"><pre><span></span><code><span class="nb">Set-AdfsRelyingPartyTrust</span> <span class="n">-TargetName</span> <span class="s2">&quot;Outlook on the web&quot;</span> <span class="n">-ClaimsProviderName</span> <span class="p">@(</span><span class="s2">&quot;ISVaaIDP&quot;</span><span class="p">)</span>
 </code></pre></div></p>
 </li>
