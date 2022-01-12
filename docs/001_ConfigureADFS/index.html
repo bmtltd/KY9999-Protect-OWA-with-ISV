@@ -1,0 +1,484 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        
+      
+      <link rel="icon" href="../assets/bmt.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6+insiders-3.2.2">
+    
+    
+      
+        <title>Get Started: Configure OWA, ADFS and IBM Security Verify - Protect Outlook Web Access with IBM Security Verify</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.b941530a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.1d832a92.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+      <link rel="preload" as="style" href="../assets/stylesheets/vendor/mermaid.733f213f.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>function __md_scope(e,t,_){return new URL(_||(t===localStorage?"..":".."),location).pathname+"."+e}function __md_get(e,t=localStorage,_){return JSON.parse(t.getItem(__md_scope(e,t,_)))}function __md_set(e,t,_=localStorage,o){try{_.setItem(__md_scope(e,_,o),JSON.stringify(t))}catch(e){}}</script>
+    
+      
+
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#get-started-configure-owa-adfs-and-ibm-security-verify" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Protect Outlook Web Access with IBM Security Verify" class="md-header__button md-logo" aria-label="Protect Outlook Web Access with IBM Security Verify" data-md-component="logo">
+      
+  <img src="../assets/bmt.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Protect Outlook Web Access with IBM Security Verify
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Get Started: Configure OWA, ADFS and IBM Security Verify
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Protect Outlook Web Access with IBM Security Verify" class="md-nav__button md-logo" aria-label="Protect Outlook Web Access with IBM Security Verify" data-md-component="logo">
+      
+  <img src="../assets/bmt.png" alt="logo">
+
+    </a>
+    Protect Outlook Web Access with IBM Security Verify
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        How to use IBM Security Verify to protect your on-premise Outlook Web Access portal
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Get Started: Configure OWA, ADFS and IBM Security Verify
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Get Started: Configure OWA, ADFS and IBM Security Verify
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-1-configure-owa-to-use-adfs" class="md-nav__link">
+    Section #1: Configure OWA to use ADFS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-2-create-an-application-in-isv" class="md-nav__link">
+    Section #2: Create an Application in ISV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-3-create-a-claims-provider-trust-in-adfs" class="md-nav__link">
+    Section #3: Create a Claims Provider Trust in ADFS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#section-1-configure-owa-to-use-adfs" class="md-nav__link">
+    Section #1: Configure OWA to use ADFS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-2-create-an-application-in-isv" class="md-nav__link">
+    Section #2: Create an Application in ISV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-3-create-a-claims-provider-trust-in-adfs" class="md-nav__link">
+    Section #3: Create a Claims Provider Trust in ADFS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                
+                <h1 id="get-started-configure-owa-adfs-and-ibm-security-verify">Get Started: Configure OWA, ADFS and IBM Security Verify</h1>
+<p>ADFS plays an important role in this integration because it proxies the SAML authentication in IBM Security Verify, and converts it to the OWA-compatable WS-Fed. </p>
+<h2 id="section-1-configure-owa-to-use-adfs">Section #1: Configure OWA to use ADFS</h2>
+<p>For a full guide, including how to provision ADFS <a href="https://docs.microsoft.com/en-us/exchange/clients/outlook-on-the-web/ad-fs-claims-based-auth?view=exchserver-2019">click here</a> for an excellent Microsoft article that walks you through everything. </p>
+<p>If you already have ADFS deployed, you simply need to create a <code>Relying Party Trust</code>. <a href="https://docs.microsoft.com/en-us/exchange/clients/outlook-on-the-web/ad-fs-claims-based-auth?view=exchserver-2019#step-4-create-a-relying-party-trust-and-custom-claim-rules-in-ad-fs-for-outlook-on-the-web-and-the-eac">Click here</a> to be taken directly to do those steps.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Web Application Proxy server is not required for this tutorial.</p>
+</div>
+<h2 id="section-2-create-an-application-in-isv">Section #2: Create an Application in ISV</h2>
+<p>Next, we need to create an Application in IBM Security Verify.</p>
+<ol>
+<li>Go to the IBM Security Verify administration console.</li>
+<li>Go to <strong>Applications</strong> &gt; <strong>Applications</strong>.</li>
+<li>Click the <strong>Add application</strong> button.</li>
+<li>
+<p>Create a new application with the following settings:</p>
+<ul>
+<li>
+<p><strong>Sign-on method:</strong> </p>
+<p>SAML2.0</p>
+</li>
+<li>
+<p><strong>Assertion consumer service URL (HTTP POST):</strong> 
+  <div class="highlight"><pre><span></span><code>https://{adfs_fqdn}/adfs/ls/idpinitiatedsignon
+</code></pre></div></p>
+</li>
+<li><strong>Target URL:</strong> 
+  <div class="highlight"><pre><span></span><code>https://{owa_fqdn}/owa
+</code></pre></div></li>
+<li>
+<p><strong>Name ID format:</strong></p>
+<p>Unspecified</p>
+</li>
+<li>
+<p><strong>Name identifier:</strong></p>
+<p>Email</p>
+</li>
+<li>
+<p><strong>Attribute Mappings</strong> &gt; Check "Send all known user attributes in the SAML Assertion".</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Assign the application to all users (assuming that's what you want).</p>
+</li>
+</ol>
+<h2 id="section-3-create-a-claims-provider-trust-in-adfs">Section #3: Create a Claims Provider Trust in ADFS</h2>
+<p>Now we need to create a Claims Provider Trust in ADFS, which is basically an additional identity provider. Then, we need to configure ADFS to always default to using our newly-created Claims Provider Trust whenever it receives a sign-in request for Outlook Web Access.</p>
+<p>On the ADFS server:</p>
+<ol>
+<li>Open the <code>AD FS Management</code> application.</li>
+<li>Under <code>AD FS</code> &gt; <code>Claims Provider Trust</code>, click <code>Add Claims Provider Trust</code>.</li>
+<li>Using the metadata file from the Application you created in ISV (in the prior section), create a new Claims Provider Trust named <code>ISVaaIDP</code>.</li>
+<li>
+<p>Under <code>Edit Claim Rules</code> &gt; <code>Add Rule</code> add the following rule:</p>
+<ul>
+<li>
+<p><strong>Claim rule template:</strong></p>
+<p>Send Claims using Custom Rule</p>
+</li>
+<li>
+<p><strong>Claim rule name:</strong>
+    <div class="highlight"><pre><span></span><code>sAMAccountName to temp
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Custom rule:</strong>
+    <div class="highlight"><pre><span></span><code>c:[Type == &quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier&quot;, Properties[&quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claimproperties/format&quot;] == &quot;urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified&quot;] 
+=&gt; issue(store = &quot;Active Directory&quot;, types = (&quot;claims:temp/attribute1&quot;), query = &quot;(&amp;(objectCategory=person)(objectClass=user)(|(userPrincipalName={0})(mail={0})));sAMAccountName;contoso\ADFS_SERVICE_ACCOUNT&quot;, param = c.Value);
+</code></pre></div>
+    Note: <code>contoso</code> should be replaced with your real domain name. And <code>ADFS_SERVICE_ACCOUNT</code> should be replaced with the AD service account ADFS is running under.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Under <code>Edit Claim Rules</code> &gt; <code>Add Rule</code> add the following 2nd rule:</p>
+<ul>
+<li>
+<p><strong>Claim rule template:</strong></p>
+<p>Send Claims using Custom Rule</p>
+</li>
+<li>
+<p><strong>Claim rule name:</strong>
+    <div class="highlight"><pre><span></span><code>temp to WindowsAccountName
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Custom rule:</strong>
+    <div class="highlight"><pre><span></span><code>c:[Type == &quot;claims:temp/attribute1&quot;] 
+=&gt; issue(Type = &quot;http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname&quot;, Issuer = &quot;AD AUTHORITY&quot;, OriginalIssuer = &quot;https://ylu2.verify.ibm.com/saml/sps/saml20ip/saml20&quot;, Value = &quot;contoso\&quot; + c.Value);
+</code></pre></div>
+    Note: <code>contoso</code> should be replaced with your real domain name.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Run the following PowerShell command to tell ADFS to always authenticate using ISV, whenever people try to sign into Outlook Web Access:
+    <div class="highlight"><pre><span></span><code><span class="nb">Set-AdfsRelyingPartyTrust</span> <span class="n">-TargetName</span> <span class="s2">&quot;Outlook on the web&quot;</span> <span class="n">-ClaimsProviderName</span> <span class="p">@(</span><span class="s2">&quot;ISVaaIDP&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>You are done!</li>
+</ol>
+                
+
+
+                
+              
+              
+                
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: How to use IBM Security Verify to protect your on-premise Outlook Web Access portal" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              How to use IBM Security Verify to protect your on-premise Outlook Web Access portal
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            <small>Documentation provided by</small><br /><br /> <img src="/assets/bmt-logo-small-white.png" /> <p> PO Box 2056,<br /> Grand Cayman KY1-1105<br /> Cayman Islands<br /> <a href="https://www.bmt.ky">https://www.bmt.ky</a> </p>
+          </div>
+        
+        
+        
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/bmtltd" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.d5944110.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e1f47d4a.min.js"></script>
+      
+    
+  </body>
+</html>
