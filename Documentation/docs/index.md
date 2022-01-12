@@ -16,3 +16,8 @@ Some IDaaS platforms get around this by having you install an agent on your Exch
 IBM Security Verify using SAML. Outlook Web Access uses WS-Fed. WS-Fed uses a different protocol than SAML, and the information it needs in the response token is different. 
 
 We use ADFS to translate the SAML response from IBM Security Verify into a WS-Fed response that Outlook Web Access understands. Some of the other popular IDaaS platforms use agents installed on your ADFS or Exchange server(s) to accomplish the same. Having ADFS do this saves you from installing an agent on your Exchange and/or ADFS server(s). One less piece of software you need to patch. Or, monitor for vulnerabilities!
+
+
+## See mistakes/bugs in our examples?
+
+If you notice an issue with our documentation, please let us know. We want to fix everything. Just raise an issue in Github, and we'll address it.
