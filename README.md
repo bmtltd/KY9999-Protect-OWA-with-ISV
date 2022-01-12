@@ -2,7 +2,7 @@
 Protect Outlook Web Access with IBM Security Verify
 
 
-Please review the following blog post for more details about the contents of this repo ([click here](https://www.bmt.ky/protect-your-custom-web-application-with-ibm-security-verify/)).
+Please review the following blog post for more details about the contents of this repo ([click here](https://www.bmt.ky/protect-owa-using-ibm-security-verify/)).
 
 
 # Disclaimer
